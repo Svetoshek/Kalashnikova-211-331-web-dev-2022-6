@@ -75,9 +75,16 @@ textarea p {
     padding: 0;
 }
 
-.text button {
-    margin-left: 26rem;
+.text {
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
 
+.text button {
+    display: block;
+    width: 200px;
 }
 
 textarea {
@@ -115,7 +122,7 @@ button {
     margin: 20px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
 
     .container-lg .row,
     .container-lg h1 {
@@ -169,9 +176,7 @@ button {
         text-align: center;
     }
 
-    .text button {
-        margin-left: 17rem;
-    }
+
 }
 
 @media (max-width: 426px) {
