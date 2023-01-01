@@ -44,16 +44,14 @@ img {
     color: white;
 }
 
+
 input,
-textarea {
-    width: 95%;
+p textarea {
+    width: 90%;
     border-radius: 10px;
     padding-left: 20px;
     margin: 10px 0 10px 0;
-}
 
-textarea p {
-    width: 0;
 }
 
 .YourName {
@@ -77,13 +75,12 @@ textarea p {
 
 .text {
     height: 10em;
-    display: flex;
     align-items: center;
     justify-content: center
 }
 
 .text button {
-    display: block;
+
     width: 200px;
 }
 
@@ -98,7 +95,13 @@ button {
     border-radius: 20px;
     padding: 0px 50px;
     margin-left: 10rem;
+    margin: 0 auto;
+    display: block;
+}
 
+.botton {
+    display: flex;
+    justify-content: center;
 }
 
 .block-icon {
@@ -122,7 +125,7 @@ button {
     margin: 20px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
 
     .container-lg .row,
     .container-lg h1 {
@@ -175,17 +178,36 @@ button {
         margin-top: 2rem;
         text-align: center;
     }
-
-
 }
 
-@media (max-width: 426px) {
+textarea {
+    width: 95%;
+}
+
+@media (max-width: 1400px) {
+
+    .text,
+    .YourName {
+        width: 206%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .YourName {
+        width: 100%;
+    }
+
+    .text {
+        width: 206%;
+    }
+}
+
+@media (max-width: 768px) {
     textarea {
         width: 95%;
     }
 
-    .text button {
-        margin-left: 7rem;
+    .text {
+        width: 100%;
     }
-
 }
